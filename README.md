@@ -17,4 +17,4 @@
 ## 5. Collaborator
 | <a href="https://github.com/won-ee"><img src="https://github.com/won-ee.png" width="100"></a> | <a href="https://github.com/MINJOO-KIM"><img src="https://github.com/MINJOO-KIM.png" width="100"></a> | <a href="https://github.com/junjunclub"><img src="https://github.com/junjunclub.png" width="100"></a> | <a href="https://github.com/JAEKWANG97"><img src="https://github.com/JAEKWANG97.png" width="100"></a> | <a href="https://github.com/suhrin-huh"><img src="https://github.com/suhrin-huh.png" width="100"></a> |
 | --- | --- | --- | --- | --- |
-| 고충원<br>([@won-ee](https://github.com/won-ee)) | 김민주<br>([@MINJOO-KIM](https://github.com/MINJOO-KIM)) | 김여준<br>([@junjunclub](https://github.com/junjunclub)) | 유재광<br>([@JAEGWANG97](https://github.com/JAEKWANG97)) | 황민채<br>([@suhrin-huh](https://github.com/suhrin-huh.png)) |
+| 고충원<br>([@won-ee](https://github.com/won-ee)) | 김민주<br>([@MINJOO-KIM](https://github.com/MINJOO-KIM)) | 김여준<br>([@junjunclub](https://github.com/junjunclub)) | 유재광<br>([@JAEGWANG97](https://github.com/JAEKWANG97)) | 황민채<br>([@suhrin-huh](https://github.com/suhrin-huh)) |
