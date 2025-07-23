@@ -13,3 +13,8 @@
   4. CHAPTER 04 자료구조
   5. CHAPTER 05 네트워크
   6. CHAPTER 06 데이터베이스
+
+## 5. Collaborator
+| 고충원 | 김민주 | 김민주 | 유재광 | 황민채 |
+| --- | --- | --- | --- | --- |
+| <a href="https://github.com/won-ee"><img src="https://github.com/won-ee.png" width="100"></a> | <a href="https://github.com/MINJOO-KIM"><img src="https://github.com/MINJOO-KIM.png" width="100"></a> | <a href="https://github.com/junjunclub"><img src="https://github.com/junjunclub.png" width="100"></a> | <a href="https://github.com/JAEKWANG97"><img src="https://github.com/JAEKWANG97.png" width="100"></a> | <a href="https://github.com/suhrin-huh"><img src="https://github.com/suhrin-huh.png" width="100"></a> |
