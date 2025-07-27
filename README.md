@@ -19,11 +19,6 @@
 | --- | --- | --- | --- | --- |
 | 고충원<br>([@won-ee](https://github.com/won-ee)) | 김민주<br>([@MINJOO-KIM](https://github.com/MINJOO-KIM)) | 김여준<br>([@junjunclub](https://github.com/junjunclub)) | 유재광<br>([@JAEGWANG97](https://github.com/JAEKWANG97)) | 황민채<br>([@suhrin-huh](https://github.com/suhrin-huh)) |
 
-아래는 현재 스터디의 폴더 구조와 흐름에 맞게 **README에 바로 붙일 수 있도록 예쁘고 명확하게 꾸민 컨벤션 섹션**입니다.
-기존 마크다운 스타일과 자연스럽게 어우러지도록 디자인했습니다.
-
----
-
 ## 6. ✅ 스터디 컨벤션
 
 **이 스터디는 "무조건 한다"는 각오로 진행합니다. 아래 규칙을 꼭 지켜주세요.**
