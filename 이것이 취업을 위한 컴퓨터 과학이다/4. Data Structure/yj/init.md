@@ -105,3 +105,132 @@ Java에서는 인터페이스로 LinkedList, PriorityQueue 등의 구현체를 �
 - 완전 이진 트리 구조라서 배열로 구현하기 쉬움
 
 Java의 PriorityQueue는 내부적으로 Binary Heap을 사용하고 있음.
+
+#### Red Black Tree
+![Red Black Tree](Red-Black-Tree.png)
+
+##### 규칙
+1. 각 노드는 red 또는 black이다.
+2. 루트 노드는 항상 black이다.
+3. 모든 리프(nil 노드, null 포인터)는 black이다.
+4. red 노드의 자식은 반드시 black이어야 한다. (즉, red-red 연속 불가)
+5. 임의의 노드에서 리프까지 가는 모든 경로의 black 노드 수는 같아야 한다. (black height)
+
+### Hash Table
+1. 내부적으로 배열 기반
+2. 평균 검색시간은 O(1)이지만, 충돌 시 O(N)까지 느려질 수 있음. 
+
+#### Hash Function
+key를 작은 범위의 숫자로 매핑하는 함수.
+
+1. key 전체를 참조해 고르게 분포, 충돌을 최소화 하는 함수가 좋은 Hash Function.
+2. 1:1보다 충돌을 줄이는게 더 좋은 선택임.
+
+##### 충돌 해결 방법
+| 항목      | Open Addressing | Separate Chaining |
+| ------- | --------------- | ----------------- |
+| 구조      | 배열 내부에서 이동      | 각 버킷에 별도 구조       |
+| 캐시 효율   | 높음              | 낮음                |
+| 확장 필요성  | 빠름              | 느림                |
+| 밀도 증가 시 | 성능 급감           | 상대적으로 안정적         |
+
+1. Open Addressing
+빈 버킷을 찾아 직접 테이블 내부에서 이동하며 저장.
+
+2. Separate Chaining
+각 버킷에 연결 리스트 or 트리 구조로 여러 요소 저장.
+
+##### 해시 버킷 동적 확장 (resize)
+해시 버킷의 개수가 적으면 메모리를 아낄 수 있지만, 충돌로 성능 저하가 발생함.
+key-value 쌍 데이터 개수가 일정 이상이 되면, 해시 버킷의 개수를 2배로 늘림.
+
+### Graph
+
+* 그래프(Graph) : 정점(Vertex)과 간선(Edge)의 집합.
+* 트리(Tree) : 그래프의 일종으로 사이클이 없는 연결 그래프.
+* 유향 그래프(Directed) vs 무향 그래프
+
+---
+
+#### 그래프 표현 방식
+
+| 방식     | 설명         | 공간 복잡도     | 특징                      |
+| ------ | ---------- | ---------- | ----------------------- |
+| 인접 행렬  | 2차원 배열로 표현 | `O(V²)`    | 빠른 탐색, Dense 그래프에 적합    |
+| 인접 리스트 | 연결 리스트로 표현 | `O(V + E)` | 메모리 효율적, Sparse 그래프에 적합 |
+
+---
+
+#### 그래프 탐색 알고리즘
+
+| 알고리즘                       | 자료구조          | 시간복잡도      | 특징                             |
+| -------------------------- | ------------- | ---------- | ------------------------------ |
+| DFS (Depth First Search)   | Stack (재귀 포함) | `O(V + E)` | 깊이 우선, 백트래킹                    |
+| BFS (Breadth First Search) | Queue         | `O(V + E)` | 너비 우선, 최단 경로 탐색에 유리 (비가중치 그래프) |
+
+---
+
+#### 최소 신장 트리 (MST, Minimum Spanning Tree)
+주어진 그래프에서 모든 정점을 연결하고, 간선 가중치의 합이 최소인 트리.
+
+#### Kruskal’s Algorithm
+
+간선 중심 (Edge-based)
+간선을 가중치 기준 정렬 → cycle 없는 것만 선택
+Union-Find로 cycle 여부 판단
+시간복잡도: `O(E log E)`
+
+#### Prim’s Algorithm
+
+정점 중심 (Vertex-based)
+현재 구성된 정점 집합에서 가장 작은 간선으로 새로운 정점 연결
+우선순위 큐(Heap) 사용 시 시간복잡도: `O(E log V)`
+
+---
+
+## 💡 면접 예상 질문
+
+
+## ✅ 기초 자료구조
+
+### 📌 Array vs LinkedList
+
+1. `Array`와 `LinkedList`의 차이점은 무엇인가요?
+2. `ArrayList`와 `LinkedList` 중 중간 삽입/삭제에 더 적합한 것은 무엇인가요?
+3. `LinkedList`는 왜 랜덤 접근 속도가 느린가요?
+
+### 📌 Stack & Queue
+
+4. `Stack`과 `Queue`의 차이점은 무엇인가요?
+5. `Stack`을 어떤 문제에서 사용할 수 있나요? 예시를 말해보세요.
+
+## ✅ 트리 (Tree)
+
+### 📌 Binary Tree & BST
+
+6. `이진 트리(Binary Tree)`와 `이진 탐색 트리(BST)`의 차이점은 무엇인가요?
+7. BST에서의 탐색, 삽입, 삭제의 시간복잡도는 어떻게 되나요?
+
+### 📌 Heap
+
+8. `Binary Heap`이란 무엇인가요?
+
+### 📌 Red Black Tree
+
+9. `Red-Black Tree`가 Self-Balancing Tree인 이유는?
+10. `Red-Black Tree`의 규칙 5가 의미하는 것은 무엇인가요?
+11. `삽입 시 노드는 왜 항상 red로 추가되나요?`
+
+## ✅ 해시(Hash Table)
+
+12. `Hash Table`에서 충돌이 발생했을 때 해결 방법은?
+13. `Open Addressing`과 `Separate Chaining`의 차이점은?
+14. `HashMap`이 성능 저하 없이 동작하려면 어떤 조건을 만족해야 하나요?
+15. 좋은 `Hash Function`의 조건은 무엇인가요?
+
+## ✅ 그래프 (Graph)
+
+16. 그래프를 저장하는 방법에는 어떤 것이 있나요? 각 방법의 장단점은?
+17. `DFS`와 `BFS`는 각각 어떤 자료구조로 구현되며, 어떤 상황에 적합한가요?
+18. `Kruskal`과 `Prim` 알고리즘의 차이는 무엇인가요?
+19. 최소 신장 트리를 구하는 알고리즘들의 시간복잡도는 어떻게 되나요?
