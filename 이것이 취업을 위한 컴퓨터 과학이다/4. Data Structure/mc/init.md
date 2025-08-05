@@ -18,3 +18,19 @@
 ## 🔗 참고 자료
 
 - [CS 정리 블로그](https://example.com)
+
+<div style="height:400px;"></div>
+
+## <br>
+
+<div align="center">
+  <img src="./assets/Binary_tree.svg.png" width="200"/>
+  <img src="./assets/skewed_binary_tree.PNG" width="200"/>
+</div>
+
+<div style="display: flex; gap: 20px;">
+    <img src="./assets/CPU.PNG" width="200"/>
+    <div style="flex: 1;">
+        <p>이것은 </p>
+    </div>
+</div>
